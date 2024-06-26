@@ -148,3 +148,12 @@ footer {
   padding: 16px 0 16px 0;
   font-size: 14px;
 }
+/* medi quiere*/
+@media(min-width:700px){
+ :root {
+   --bg-url: url(./assents/bg-desktop.jpg);
+ }
+  .light{
+    --bg-url: url(./assents/bg-desktop-light.jpg);
+  }
+}
