@@ -22,8 +22,7 @@
   --switch-bg: url(./assents/Sun.svg);
 }
 .light #switch button {
-  right: 0;
-  left: initial;
+ animation: slide-in 0.4s forwards;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -74,6 +73,10 @@ body {
   margin: 0 auto;
   padding: 4px auto;
 }
+#switch button:hover {
+  outline:8px solid var(--social-link-hover);
+
+}
 #switch button {
   width: 32px;
   height: 32px;
@@ -85,6 +88,7 @@ body {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
+  animation: slide-out .4s;
 }
 #switch span {
   display: block;
@@ -155,5 +159,23 @@ footer {
  }
   .light{
     --bg-url: url(./assents/bg-desktop-light.jpg);
+  }
+}
+/* animação do switch*/
+@keyframes slide-in {
+from{
+  left:0;
+}
+to{
+  left:50%;
+}
+
+}
+@keyframes slide-out{
+  from{
+left:50%;
+  }
+  to{
+   left:0;
   }
 }
