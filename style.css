@@ -45,7 +45,8 @@ body {
 }
 
 #container {
-  width: 360px;
+  width:100%;
+  max-width: 588px;
   /* a altura nao é bem definida, para se for usada pelo celular poder oorrer a rolage*/
 
   margin: 56px auto 0;
