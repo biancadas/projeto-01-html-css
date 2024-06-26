@@ -22,7 +22,7 @@
   --switch-bg: url(./assents/Sun.svg);
 }
 .light #switch button {
- animation: slide-in 0.4s forwards;
+  animation: slide-in 0.4s forwards;
 }
 body * {
   font-family: "Inter", sans-serif;
@@ -44,7 +44,7 @@ body {
 }
 
 #container {
-  width:100%;
+  width: 100%;
   max-width: 588px;
   /* a altura nao é bem definida, para se for usada pelo celular poder oorrer a rolage*/
 
@@ -74,8 +74,7 @@ body {
   padding: 4px auto;
 }
 #switch button:hover {
-  outline:8px solid var(--social-link-hover);
-
+  outline: 8px solid var(--social-link-hover);
 }
 #switch button {
   width: 32px;
@@ -88,7 +87,7 @@ body {
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  animation: slide-out .4s;
+  animation: slide-out 0.4s;
 }
 #switch span {
   display: block;
@@ -153,29 +152,28 @@ footer {
   font-size: 14px;
 }
 /* medi quiere*/
-@media(min-width:700px){
- :root {
-   --bg-url: url(./assents/bg-desktop.jpg);
- }
-  .light{
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assents/bg-desktop.jpg);
+  }
+  .light {
     --bg-url: url(./assents/bg-desktop-light.jpg);
   }
 }
 /* animação do switch*/
 @keyframes slide-in {
-from{
-  left:0;
-}
-to{
-  left:50%;
-}
-
-}
-@keyframes slide-out{
-  from{
-left:50%;
+  from {
+    left: 0;
   }
-  to{
-   left:0;
+  to {
+    left: 50%;
+  }
+}
+@keyframes slide-out {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
   }
 }
